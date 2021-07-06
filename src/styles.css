@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+}
+
+code {
+  padding: 2px 4px;
+  color: #c0341d;
+  background-color: #fbe5e1;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.table {
+  border: black 1px solid;
+  width: 500px;
+  padding: 5px;
+}
+
+.parentRow {
+  width: 100%;
+  background-color: white
+}
+
+.row {
+  display: flex;
+}
+
+.key {
+ width: 50%;
+}
+
+.property {
+  width: 50%
+}
+
+.parentRow .parentRow {
+  padding-left: 20px;
+  width:auto;
+  background-color: rgb(182, 182, 182);
+}
+
+.parentRow .row {
+  padding-left: 20px;
+}
+
+.parentRow > .parentRow > .row > .property {
+  margin-left: -20px;
+}
+
+.parentRow > .row > .property {
+  margin-left: -10px;
+}
+
+.parentRow .parentRow :nth-child(3){
+  background-color: white;
+}
+
+.table > :nth-child(even) {
+  background-color: rgb(182, 182, 182);
+}
